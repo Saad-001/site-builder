@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site builder</title>
+
+    
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/4c6530eb2c.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind CSS CDN Link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar starts -->
+    <nav class="background-one font-roboto">
+        <div class="hidden lg:block">
+            <div class="mx-24 py-3 flex items-center justify-between">
+                <div class="">
+                    <img src="" alt="LOGO">
+                </div>
+                <div class="flex items-center space-x-8">
+                    <div class="flex items-center space-x-3">
+                        <div>
+                            <select class="py-2 px-4 focus:outline-none background-one font-bold" name="" id="">
+                                <option class="font-bold" disabled selected>Templates</option>
+                                <option class="font-bold" value="template1">Template 1</option>
+                                <option class="font-bold" value="template2">Template 2</option>
+                                <option class="font-bold" value="template3">Template 3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="py-2 px-4 focus:outline-none background-one font-bold" name="" id="">
+                                <option class="font-bold" disabled selected>Examples</option>
+                                <option class="font-bold" value="example1">Example 1</option>
+                                <option class="font-bold" value="example2">Example 2</option>
+                                <option class="font-bold" value="example3">Example 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <a href="" class="font-bold">Help</a>
+                </div>
+                <div class="">
+                    <button class="inline-flex items-center bg-gray-100 border-0 py-2 px-4 focus:outline-none hover:bg-gray-200 rounded font-bold text-base mt-4 md:mt-0">Log In</button>
+                    <button class="inline-flex items-center bg-gray-800 text-gray-100 border-0 py-2 px-4 focus:outline-none hover:bg-gray-900 rounded font-bold text-base mt-4 md:mt-0">Get Started</button>
+                </div>
+            </div>    
+        </div>
+
+        <div class="lg:hidden md:block">
+            <!-- mobile menu sidebar -->
+            <div class="relative min-h-screen md:flex">
+    
+                <!-- mobile menu bar -->
+                <div class="background-one text-gray-800 flex justify-between md:hidden">
+                  <!-- logo -->
+                  <a href="#" class="block p-4 text-gray-800 font-bold">Better Dev</a>
+              
+                  <!-- mobile menu button -->
+                  <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-300">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </button>
+                </div>
+              
+                <!-- sidebar -->
+                <div class="sidebar background-one text-gray-800 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+              
+                  <!-- logo -->
+                  <a href="#" class="text-gray-800 flex items-center space-x-2 px-4">
+                    <img src="" alt="LOGO">
+                  </a>
+              
+                  <!-- nav -->
+                  <nav class="">
+                    <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200 font-bold text-gray-800">
+                        Home
+                    </a>
+                    <div class="">
+                        <div x-data="{show: false}" @click.away="show = false"> <button @click="show = ! show" class="border-0 w-full block text-gray-200 rounded-lg px-4 py-3 overflow-hidden focus:outline-none">
+                                <div class="flex justify-between"> <span class="text-gray-800 font-bold">Templates</span> <svg class="fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                        <path d="M7 10l5 5 5-5z" />
+                                        <path d="M0 0h24v24H0z" fill="none" /></svg> 
+                                </div>
+                            </button>
+                            <div x-show="show" class="mt-2 py-2 background-two rounded-lg">
+                                <a href="#" class="block px-4 py-2 font-bold text-gray-800 hover:bg-gray-300">Template1</a>
+                                <a href="#" class="block px-4 py-2 font-bold text-gray-800 hover:bg-gray-300">Template2</a>
+                                <a href="#" class="block px-4 py-2 font-bold text-gray-800 hover:bg-gray-300">Template3</a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div x-data="{show: false}" @click.away="show = false"> <button @click="show = ! show" class="border-0 w-full block text-gray-700 font-bold b rounded-lg px-4 py-3 overflow-hidden focus:outline-none">
+                                <div class="flex justify-between"> <span class="text-gray-800">Examples</span> <svg class="fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                        <path d="M7 10l5 5 5-5z" />
+                                        <path d="M0 0h24v24H0z" fill="none" /></svg> 
+                                </div>
+                            </button>
+                            <div x-show="show" class="mt-2 py-2 background-two rounded-lg">
+                                <a href="#" class="block px-4 py-2 text-gray-800 font-bold hover:bg-gray-300">Example1</a>
+                                <a href="#" class="block px-4 py-2 text-gray-800 font-bold hover:bg-gray-300">Example2</a>
+                                <a href="#" class="block px-4 py-2 text-gray-800 font-bold hover:bg-gray-300">Example3</a> 
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="block py-2.5 px-4 rounded transition duration-200 font-bold text-gray-800 hover:bg-gray-200">
+                        Help
+                    </a>
+                    <a href="" class="block py-2.5 px-4 rounded transition font-bold duration-200 hover:bg-gray-200 text-gray-800">
+                        About
+                      </a>
+                    <a href="" class="block items-center bg-gray-100 border-0 py-2 px-4 focus:outline-none hover:bg-gray-200 rounded font-bold text-base mt-4 md:mt-0">Log In</a>
+                    <a href="" class="block items-center bg-gray-100 border-0 py-2 px-4 focus:outline-none hover:bg-gray-200 rounded font-bold text-base mt-4 md:mt-0">Get Started</a>
+                  </nav>
+                </div>
+              
+                <!-- content -->
+                <div class="flex-1 p-10 text-2xl font-bold">
+                  content goes here
+                </div>
+            </div>
+        </div>    
+    </nav>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</body>
+</html>
