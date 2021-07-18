@@ -24,6 +24,26 @@
 }
 
 .header-section{
-    height: 530px;
+    height: 540px;
     width: 100%;
+}
+
+.header-section{
+    margin-bottom: 210px;
+}
+
+.header-image-container{
+    
+}
+
+@media screen and (max-width: 600px) {
+    .header-section{
+        margin-bottom: 130px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .header-section{
+        margin-bottom: 100px;
+    }
 }
