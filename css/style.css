@@ -1,3 +1,4 @@
+
 .font-roboto{
     font-family: 'Roboto', sans-serif;
 }
@@ -12,4 +13,17 @@
 
 .background-two{
     background-color: #f4f4f4;
+}
+
+.btn-background{
+    background-color: rgb(250, 204, 143);
+}
+
+.text-color{
+    color: rgb(250, 204, 143);
+}
+
+.header-section{
+    height: 530px;
+    width: 100%;
 }
