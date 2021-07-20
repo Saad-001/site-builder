@@ -17,6 +17,10 @@
   <!-- custom css link -->
   <link rel="stylesheet" href="./css/style.css">
 
+  <!-- owl carousel css links -->
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
   <!-- font links -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -110,10 +114,10 @@
 
     <div class="lg:hidden md:block">
       <!-- mobile menu sidebar -->
-      <div class="relative min-h-screen md:flex">
+      <div class="relative min-h-screen"> 
 
         <!-- mobile menu bar -->
-        <div class="background-two text-gray-800 flex justify-between md:hidden">
+        <div class="background-two text-gray-800 flex justify-between ">
           <!-- logo -->
           <a href="#" class="block p-4 text-gray-800 font-bold">LOGO</a>
 
@@ -128,7 +132,7 @@
 
         <!-- sidebar -->
         <div
-          class="sidebar background-one text-gray-800 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+          class="sidebar background-one text-gray-800 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out">
 
           <!-- logo -->
           <a href="#" class="text-gray-800 flex items-center space-x-2 px-4">
@@ -195,10 +199,12 @@
         </div>
 
         <!-- content -->
-        <div class="flex-1">
+        <div class="">
+          <!-- flex-1 -->
           <header class="header-section pt-10 bg-gray-800">
             <div class="overlay mx-3 lg:mx-24 text-center">
-              <h1 class="text-5xl text-color font-semibold">Transform your idea to a real thing, one click and business
+              <h1 class="text-5xl text-color font-inter font-semibold">Transform your idea to a real thing, one click
+                and business
                 starts.</h1>
               <p class="text-white mt-5 mb-8">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no
                 suscipit quaerendum. At nam minimum ponderum.</p>
@@ -209,13 +215,113 @@
             </div>
           </header>
 
-          <!-- main section fon mobile device -->
+          <!-- main section for mobile device -->
           <main class="pt-10 background-two">
             <div class="lg:mx-24 mx-3 text-center">
-              <h1 class="text-gray-800 text-4xl font-bold">Templates with <br> best experience</h1>
+              <h1 class="text-gray-800 text-4xl font-inter font-bold md:mt-20">Templates with <br> best experience</h1>
               <p class="mt-5 font-semibold">Select your category, choose your template and start.</p>
             </div>
+            <div class="owl-carousel owl-theme mt-3">
+              <div class="item">
+                <div class="card text-center">
+                  <a href="">
+                    <img class="rounded w-full" src="./img/template_image1.png" alt="">
+                    <p class="font-bold mt-1">Online Store</p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card text-center">
+                  <a href="">
+                    <img class="rounded w-full" src="./img/template_image2.png" alt="">
+                    <p class="font-bold mt-1">Education</p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card text-center">
+                  <a href="">
+                    <img class="rounded w-full" src="./img/template_image3.png" alt="">
+                    <p class="font-bold mt-1">Islamic Academy</p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card text-center">
+                  <a href="">
+                    <img class="rounded w-full" src="./img/template_image4.png" alt="">
+                    <p class="font-bold mt-1">Programming Academy</p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card text-center">
+                  <a href="">
+                    <img class="rounded w-full" src="./img/template_image5.png" alt="">
+                    <p class="font-bold mt-1">Online Agro</p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card text-center">
+                  <a href="">
+                    <img class="rounded w-full" src="./img/template_image6.png" alt="">
+                    <p class="font-bold mt-1">Charity</p>
+                  </a>
+                </div>
+              </div>
+            </div>
           </main>
+
+          <!-- footer section starts -->
+          <footer class="bg-gray-800 py-8">
+            <div class="grid grid-cols-1 gap-8 text-white mx-3">
+              <div class="grid grid-cols-2 mx-10">
+                <div class="flex flex-col space-y-4">
+                  <a href="" class="font-semibold">Templates</a>
+                  <a href="" class="font-semibold">Website Builder</a>
+                  <a href="" class="font-semibold">Webschooly</a>
+                  <a href="" class="font-semibold">E-commerce</a>
+                  <a href="" class="font-semibold">Visit Techneous</a>
+                </div>
+                <div class="flex flex-col ml-10 space-y-4">
+                  <a href="" class="font-semibold">About</a>
+                  <a href="" class="font-semibold">Career</a>
+                  <a href="" class="font-semibold">Privacy policy</a>
+                  <a href="" class="font-semibold">Blogs</a>
+                  <a href="" class="font-semibold">Support</a>
+                </div>
+              </div>
+              <div class="space-y-4 mx-10">
+                <h4 class="text-xl font-semibold">Contact us</h4>
+                <div class="flex items-center space-x-4 mt-6">
+                  <i class="far fa-envelope"></i>
+                  <p>hello@techneous.com</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <i class="fas fa-map-marker-alt text-xl"></i>
+                  <p>Chitagang Road,Shiddirganj,
+                    Narayanganj, Dhaka 1361</p>
+                </div>
+              </div>
+
+              <div class="mx-10">
+                <h4>Follow Us</h4>
+                <div class="flex text-xl items-center space-x-3 mt-6">
+                  <a href=""><i class="fab fa-facebook-square"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram-square"></i></a>
+                  <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- footer section ends -->
         </div>
       </div>
     </div>
@@ -224,7 +330,8 @@
   <!-- header section starts -->
   <header class="header-section pt-10 bg-gray-800 hidden lg:block">
     <div class="mx-3 lg:mx-24 text-center">
-      <h1 class="text-5xl text-color font-semibold">Transform your idea to a real <br> thing, one click and business
+      <h1 class="text-5xl text-color font-inter font-semibold">Transform your idea to a real <br> thing, one click and
+        business
         starts.</h1>
       <p class="text-white mt-5 mb-8">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, <br /> nam no
         suscipit quaerendum. At nam minimum ponderum.</p>
@@ -239,7 +346,7 @@
   <!-- main section starts -->
   <main class="pt-10 background-two hidden lg:block pb-14">
     <div class="lg:mx-24 mx-3 text-center">
-      <h1 class="text-gray-800 text-4xl font-bold">Templates with <br> best experience</h1>
+      <h1 class="text-gray-800 text-4xl font-inter font-bold">Templates with <br> best experience</h1>
       <p class="mt-5 font-semibold">Select your category, choose your template and start.</p>
     </div>
 
@@ -248,19 +355,19 @@
         <div class="card text-center">
           <a href="">
             <img class="rounded w-full" src="./img/template_image1.png" alt="">
-            <p class="font-bold mt-5">Online Store</p>
+            <p class="font-bold mt-3">Online Store</p>
           </a>
         </div>
         <div class="card text-center">
           <a href="">
             <img class="rounded w-full" src="./img/template_image2.png" alt="">
-            <p class="font-bold mt-5">Education</p>
+            <p class="font-bold mt-3">Education</p>
           </a>
         </div>
         <div class="card text-center">
           <a href="">
             <img class="rounded w-full" src="./img/template_image3.png" alt="">
-            <p class="font-bold mt-5">Islamic Academy</p>
+            <p class="font-bold mt-3">Islamic Academy</p>
           </a>
         </div>
       </div>
@@ -268,30 +375,30 @@
         <div class="card text-center">
           <a href="">
             <img class="rounded w-full" src="./img/template_image4.png" alt="">
-            <p class="font-bold mt-5">Programming Academy</p>
+            <p class="font-bold mt-3">Programming Academy</p>
           </a>
         </div>
         <div class="card text-center">
           <a href="">
             <img class="rounded w-full" src="./img/template_image5.png" alt="">
-            <p class="font-bold mt-5">Online Agro</p>
+            <p class="font-bold mt-3">Online Agro</p>
           </a>
         </div>
         <div class="card text-center">
           <a href="">
             <img class="rounded w-full" src="./img/template_image6.png" alt="">
-            <p class="font-bold mt-5">Charity</p>
+            <p class="font-bold mt-3">Charity</p>
           </a>
         </div>
       </div>
     </div>
   </main>
   <!-- footer section starts -->
-  <footer class="bg-gray-800 py-16">
+  <footer class="bg-gray-800 py-16 hidden lg:block">
     <div class="mx-24 flex text-white">
       <div class="flex-1 flex flex-col space-y-4">
-        <a href="" class="font-semibold">Templates</a>        
-        <a href="" class="font-semibold">Website Builder</a>        
+        <a href="" class="font-semibold">Templates</a>
+        <a href="" class="font-semibold">Website Builder</a>
         <a href="" class="font-semibold">Webschooly</a>
         <a href="" class="font-semibold">E-commerce</a>
         <a href="" class="font-semibold">Visit Techneous</a>
@@ -311,14 +418,14 @@
         </div>
         <div class="flex items-center space-x-4">
           <i class="fas fa-map-marker-alt text-xl"></i>
-          <p>Chitagang Road,Shiddirganj, 
+          <p>Chitagang Road,Shiddirganj,
             Narayanganj, Dhaka 1361</p>
         </div>
       </div>
 
-      <div class="flex-1">
+      <div class="flex-1 lg:ml-20">
         <h4>Follow Us</h4>
-        <div class="flex items-center space-x-3 mt-6">
+        <div class="flex text-xl items-center space-x-3 mt-6">
           <a href=""><i class="fab fa-facebook-square"></i></a>
           <a href=""><i class="fab fa-twitter"></i></a>
           <a href=""><i class="fab fa-instagram-square"></i></a>
@@ -332,8 +439,13 @@
   <div class="text-center btn-background py-3">
     <p class="font-semibold">COPYRIGHT 2021</p>
   </div>
-  <script src="./js/script.js"></script>
+
+
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <!-- owl carousel related important links -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
