@@ -40,11 +40,16 @@ body{
 }
 
 .card:hover .card-btn{
-    display: block;
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
 }
 
 .card-btn{
-    display: none;
+    /* display: none; */
+    visibility: hidden;
+    opacity:0;
+    transition:visibility 0.5s linear,opacity 0.5s linear;
     position: absolute;
     top: 120px;
     left: 125px;
@@ -79,7 +84,9 @@ body{
 
 @media screen and (max-width: 1000px) {
     .card-btn{
-        display: none;
+        visibility: hidden;
+        opacity:0;
+        transition:visibility 0.5s linear,opacity 0.5s linear;
         position: absolute;
         top: 50px;
         left: 50px;
@@ -88,7 +95,9 @@ body{
 
 @media screen and (max-width: 999px) {
     .card-btn{
-        display: none;
+        visibility: hidden;
+        opacity:0;
+        transition:visibility 0.5s linear,opacity 0.5s linear;
         position: absolute;
         top: 140px;
         left: 180px;
@@ -97,7 +106,9 @@ body{
 
 @media screen and (max-width: 850px) {
     .card-btn{
-        display: none;
+        visibility: hidden;
+        opacity:0;
+        transition:visibility 0.5s linear,opacity 0.5s linear;
         position: absolute;
         top: 120px;
         left: 130px;
@@ -106,7 +117,9 @@ body{
 
 @media screen and (max-width: 768px) {
     .card-btn{
-        display: none;
+        visibility: hidden;
+        opacity:0;
+        transition:visibility 0.5s linear,opacity 0.5s linear;
         position: absolute;
         top: 270px;
         left: 320px;
@@ -115,7 +128,9 @@ body{
 
 @media screen and (max-width: 700px) {
     .card-btn{
-        display: none;
+        visibility: hidden;
+        opacity:0;
+        transition:visibility 0.5s linear,opacity 0.5s linear;
         position: absolute;
         top: 200px;
         left: 280px;
@@ -124,7 +139,9 @@ body{
 
 @media screen and (max-width: 600px) {
     .card-btn{
-        display: none;
+        visibility: hidden;
+        opacity:0;
+        transition:visibility 0.5s linear,opacity 0.5s linear;
         position: absolute;
         top: 200px;
         left: 200px;
@@ -133,7 +150,9 @@ body{
 
 @media screen and (max-width: 500px) {
     .card-btn{
-        display: none;
+        visibility: hidden;
+        opacity:0;
+        transition:visibility 0.5s linear,opacity 0.5s linear;
         position: absolute;
         top: 150px;
         left: 180px;
@@ -142,7 +161,9 @@ body{
 
 @media screen and (max-width: 450px) {
     .card-btn{
-        display: none;
+        visibility: hidden;
+        opacity:0;
+        transition:visibility 0.5s linear,opacity 0.5s linear;
         position: absolute;
         top: 150px;
         left: 150px;
@@ -151,7 +172,9 @@ body{
 
 @media screen and (max-width: 400px) {
     .card-btn{
-        display: none;
+        visibility: hidden;
+        opacity:0;
+        transition:visibility 0.5s linear,opacity 0.5s linear;
         position: absolute;
         top: 130px;
         left: 130px;
