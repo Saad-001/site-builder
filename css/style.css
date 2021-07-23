@@ -35,6 +35,21 @@ body{
     margin-bottom: 210px;
 }
 
+.card{
+    position: relative;
+}
+
+.card:hover .card-btn{
+    display: block;
+}
+
+.card-btn{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 125px;
+}
+
 .owl-dots{
     padding-top: 16px;
     padding-bottom: 16px;
@@ -59,5 +74,86 @@ body{
 @media screen and (max-width: 560px) {
     .header-section{
         margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .card-btn{
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .card-btn{
+        display: none;
+        position: absolute;
+        top: 140px;
+        left: 180px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .card-btn{
+        display: none;
+        position: absolute;
+        top: 120px;
+        left: 130px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-btn{
+        display: none;
+        position: absolute;
+        top: 270px;
+        left: 320px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card-btn{
+        display: none;
+        position: absolute;
+        top: 200px;
+        left: 280px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-btn{
+        display: none;
+        position: absolute;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-btn{
+        display: none;
+        position: absolute;
+        top: 150px;
+        left: 180px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .card-btn{
+        display: none;
+        position: absolute;
+        top: 150px;
+        left: 150px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card-btn{
+        display: none;
+        position: absolute;
+        top: 130px;
+        left: 130px;
     }
 }
