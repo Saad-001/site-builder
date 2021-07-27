@@ -67,6 +67,13 @@ body{
     padding-bottom: 16px;
 }
 
+.signUp-bg{
+    background-image: url('../img/Sign-up-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 @media screen and (max-width: 880px) {
     .header-section{
