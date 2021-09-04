@@ -25,3 +25,8 @@ btn.addEventListener("click", () => {
   sidebar.classList.toggle("-translate-x-full");
   sidebar.classList.add("z-10");
 });
+
+function showDetails(){
+  let details = document.getElementById("details");
+  details.classList.toggle("hidden")
+}
